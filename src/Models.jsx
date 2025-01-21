@@ -1,7 +1,9 @@
 import { useGLTF } from '@react-three/drei'
 
 export default function LoadModels({ arrowV, arrowH }) {
-    const { nodes } = useGLTF('./src/assets/models/modelvh_2.glb')
+    // const { nodes } = useGLTF('./src/assets/models/modelvh_2.glb')
+    const { nodes } = useGLTF('./models/modelvh_3.glb')
+
 
     console.log(nodes)
     console.log('Current State:', `V${arrowV}H${arrowH}`)
