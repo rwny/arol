@@ -61,7 +61,7 @@ function App() {
     <>
       <div className="sidebar">
         <div className="object-data">
-          <div className="object-name">Object Info</div>
+          <div className="object-name">Object Info-x</div>
           <div className="object-properties">
             Click an object to see its properties
           </div>
