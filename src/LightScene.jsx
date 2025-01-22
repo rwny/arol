@@ -11,7 +11,7 @@ export default function LightScene() {
             />
             
             {/* Floor Plane */}
-            <mesh 
+            {/* <mesh 
                 rotation={[-Math.PI / 2, 0, 0]} 
                 position={[0, 0, 0]} 
                 receiveShadow
@@ -24,7 +24,7 @@ export default function LightScene() {
                     // roughness={0.8}
                     // metalness={0.2}
                 />
-            </mesh>
+            </mesh> */}
         </>
     )
 }

@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function LoadModels({ arrowV, arrowH }) {
     // const { nodes } = useGLTF('./src/assets/models/modelvh_2.glb')
-    const { nodes } = useGLTF('./models/modelvh.glb')
+    const { nodes } = useGLTF('./models/model023-04.glb')
 
 
     console.log(nodes)
@@ -62,21 +62,20 @@ export default function LoadModels({ arrowV, arrowH }) {
                 return (
                     <>
 
-                    <mesh position={[-1,1,-1]} castShadow >
-                        <boxGeometry />
-                        <meshBasicMaterial color={'red'} />
-                    </mesh>
 
-                    <primitive 
+                    {/* <primitive 
                         position ={[-2.50,0,0]}
                         key={node.uuid}
                         object={node}
                         visible={shouldShow}
                         castShadow
                         receiveShadow
-                        />
+                    /> */}
+
+                    <group positon = {[0,1,0]}>
+                        <primitive object={nodes.Scene} />
+                    </group>
                     </>
-                    // <primitive object={nodes.Scene} />
                 )
             })}
         </group>
